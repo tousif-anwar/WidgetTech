@@ -70,7 +70,7 @@ async function handleSave() {
               </label>
             </div>
           </div>
-          <BaseInput v-model="form.primaryColor as string" label="Primary colour (hex)" placeholder="#2563eb" />
+          <BaseInput v-model="form.primaryColor as string" label="Primary color (hex)" placeholder="#2563eb" />
           <BaseInput
             :model-value="String(form.defaultProductCount ?? 8)"
             label="Default product count"
