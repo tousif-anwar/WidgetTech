@@ -73,7 +73,7 @@ WidgetAI is a **distributed, cloud-native e-commerce widget platform** for creat
 | # | Component | Responsibility |
 |---|-----------|---------------|
 | 1 | **Embeddable Widget** | Lightweight JS/CSS bundle served from CDN; renders product grid, search, and cart inside any host page via Shadow DOM. |
-| 2 | **Seller Dashboard** | React single-page application for product management, order review, analytics, and Stripe Connect onboarding. |
+| 2 | **Seller Dashboard** | Vue 3 + TypeScript single-page application for product management, order review, analytics, and Stripe Connect onboarding. |
 | 3 | **API Gateway** | Single entry-point for all client traffic. Handles TLS termination, JWT validation, rate limiting, request routing, and observability hooks. |
 | 4 | **Auth / Authorization Service** | Issues and validates JWTs; manages seller and buyer identities; enforces RBAC; integrates with OAuth 2.0 providers (Google, GitHub). |
 | 5 | **Product Catalog Service** | CRUD for products, variants, and media assets; search powered by Elasticsearch; backed by DynamoDB/Cassandra for high read throughput. |
@@ -172,7 +172,7 @@ WidgetAI/
 ├── widget/                          # Embeddable JS/CSS bundle
 │   ├── src/
 │   └── dist/
-├── dashboard/                       # Seller admin SPA (React)
+├── dashboard/                       # Seller admin SPA (Vue 3 + TypeScript)
 │   └── src/
 ├── infra/                           # Infrastructure-as-Code
 │   ├── terraform/                   # Cloud resource provisioning
